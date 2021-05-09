@@ -29,28 +29,39 @@ Route::get('products/create', function () {
     return view('create_product');
 });
 
+//insert new product
 
 Route::post('products/store', function (Request $request) {
 
-    DB::table('products')->insert([
+    DB::table('products')->insert([ 
+        
         'product_name' => $request->product_name,
         'product_price' => $request->product_price,
         'product_quantity' => $request->product_qty
+        
     ]);
 
     return redirect('products');
 });
+
+//delete product 
+
 Route::get('products/{id}', function ($id) {
 
     DB::table('products')->where('id', $id)->delete();
     return redirect()->back();
 });
+
+// edit || update product 
+
 Route::post('products', function (Request $request, $id) {
 
     DB::table('products')->where('$id',$id)->update([
+        
         'product_name' => $request->product_name,
         'product_price' => $request->product_price,
         'product_quantity' => $request->product_qty
+        
     ]);
     return redirect('products');
 });
