@@ -39,30 +39,6 @@
                 </td>
             </tr>
             @endforeach
-
-
-            {{-- <tr>
-                <td>2</td>
-                <td>Shirt 2</td>
-                <td>24.99 $</td>
-                <td>8</td>
-                <td>
-                    <a class="btn btn-info" href="#">Edit</a>
-
-                    <a class="btn btn-danger" href="#">Delete</a>
-                </td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Shirt 3</td>
-                <td>19.95 $</td>
-                <td>1</td>
-                <td>
-                    <a class="btn btn-info" href="#">Edit</a>
-
-                    <a class="btn btn-danger" href="#">Delete</a>
-                </td>
-            </tr> --}}
         </table>
     </div>
 
